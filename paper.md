@@ -93,4 +93,6 @@ the potential to aid many more astronomers in their data processing
 and visualization needs.  It is actively developed and maintained, and
 the authors welcome & encourage collaboration.
 
+![SkyPortal source rendering. Note the object thumbnails, light curve, spectrogram, live chat, and links to various sky surveys.](screenshot-2019-02.png)
+
 # References
