@@ -42,8 +42,8 @@ eventually
 
 By default, it aims to provide a useful user experience, including
 light curves, spectrograms, live chat, and links to other surveys.
-But the intent is for the frontend to be modified to best suit the
-specific scientific problem at hand.
+But the intent, ultimately, is for the frontend to be modified to best
+suit the specific scientific problem at hand.
 
 # Architecture
 
@@ -82,8 +82,28 @@ changed by the adminstrator.  ACL based security deals with user
 roles, which determine, regardless of data source, which pages a user
 can access.
 
-SkyPortal can currently be deployed in one of three ways: local
-execution, inside of a Docker container, or via Kubernetes.
+SkyPortal is designed to be employed on systems of varying scale: a
+laptop, local server, or hosted infrastructure.  We support packaging
+the entire application into a Docker container, which can then be
+employed to the cloud .  An example deployment, using Kubernetes, is
+provided.
+
+Integration testing is done upon every commit, using Travis-CI, by
+automating the Firefox browser
+with
+[GeckoDriver](https://firefox-source-docs.mozilla.org/testing/geckodriver/geckodriver/).
+This ensures that the entire user experience—from logging in to making
+API requests—keeps working correctly.
+
+# Future work
+
+In the next version of SkyPortal, we will support loading sources in
+real-time from astronomical surveys, typically by
+ingesting [Kafka](https://kafka.apache.org/) streams.  We are also
+adding the ability to publish processed sub-streams, creating
+so-called "brokers".  Finally, it will be possible to customize views
+(from the web interface), and for developers to easily add and modify
+user-interface components.
 
 # Conclusion
 
@@ -93,6 +113,6 @@ the potential to aid many more astronomers in their data processing
 and visualization needs.  It is actively developed and maintained, and
 the authors welcome & encourage collaboration.
 
-![SkyPortal source rendering. Note the object thumbnails, light curve, spectrogram, live chat, and links to various sky surveys.](screenshot-2019-02.png)
+![SkyPortal source rendering. Featured are thumbnails, light curve plot, spectrogram, live chat, and links to various sky surveys.](screenshot-2019-02.png)
 
 # References
