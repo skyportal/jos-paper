@@ -12,7 +12,7 @@ authors:
   - name: Stéfan J. van der Walt
     orcid: 0000-0001-9276-1891
     affiliation: 1
-  - name: Ari-Crellin Quick
+  - name: Arien Crellin-Quick
     orcid: 0000-0002-7183-0410
     affiliation: 2
   - name: Joshua S. Bloom
@@ -35,10 +35,10 @@ designed to be modular and extensible, so it can be customized for
 various scientific use cases.  It is released under the Modified BSD
 license.
 
-SkyPortal was designed around time-series survey data from
+SkyPortal was designed with time-series survey data from
 the [Zwicky Transient Facility](https://www.ztf.caltech.edu), and
 eventually
-[The Large Synoptic Survey Telescope](https://www.lsst.org), in mind. 
+[The Large Synoptic Survey Telescope](https://www.lsst.org), in mind.
 
 By default, it aims to provide a useful, rich user experience, including
 light curves of named astronomical events/transients, spectra, live chat, and links to other surveys.
