@@ -51,3 +51,6 @@ $(foreach image,$(images),$(eval $(image): | $(dir $(image))))
 
 clean: $(build_dir)
 	rm -rf $(build_dir)
+
+sync:
+	cp paper.md paper.bib screen*.png ../skyportal/doc/papers/joss
